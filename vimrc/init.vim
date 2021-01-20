@@ -195,7 +195,7 @@ nmap ga <Plug>(EasyAlign)
 
 "coc nvim
 let g:python3_host_prog = '/Users/ulfrid/miniconda3/bin/python'
-let g:coc_global_extensions = ['coc-explorer', 'coc-json', 'coc-tsserver', 'coc-import-cost', 'coc-eslint', 'coc-snippets', 'coc-template', 'coc-html', 'coc-css', 'coc-emmet', 'coc-pyright', 'coc-phpls', 'coc-angular', 'coc-git']
+let g:coc_global_extensions = ['coc-explorer', 'coc-json', 'coc-tsserver', 'coc-import-cost', 'coc-eslint', 'coc-snippets', 'coc-html', 'coc-css', 'coc-emmet', 'coc-pyright', 'coc-phpls', 'coc-angular', 'coc-git']
 let g:coc_global_extensions += ['https://github.com/andys8/vscode-jest-snippets']
 
 " Indent guide plugin setting (https://github.com/nathanaelkane/vim-indent-guides)
@@ -243,4 +243,13 @@ colorscheme tender
 
 " ================================ Ctags settings ===================================
 set tags=./tags,tags                "find tags in current dir
-nnoremap <C-[> <Esc>:po<CR>         
+nnoremap <C-[> <Esc>:po<CR> 
+
+""""""""""""""""""""""""""""""""""
+"Easy Align
+""""""""""""""""""""""""""""""""""
+" Start interactive EasyAlign in visual mode (e.g. vipga)
+xmap ga <Plug>(EasyAlign)
+
+" Start interactive EasyAlign for a motion/text object (e.g. gaip)
+nmap ga <Plug>(EasyAlign)        
